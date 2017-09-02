@@ -1,0 +1,590 @@
+% Package: faXeTeX v1.0
+%
+% FontAwesome (http://fortawesome.github.com/Font-Awesome/) bindings for XeLaTeX
+% Author: Srikanth Yalavarthi
+% GitHub: https://github.com/ysk1188/faXeTeX/
+%
+% XeLaTeX Symbols using FontAwesome v4.7.0's Characters
+% All icons are camel-cased and prefixed with 'fa'
+%
+% Copyright 2017 Srikanth Yalavarthi
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Srikanth Yalavarthi
+%
+% This work consists of the files fontawesome.tex, fontawesome.sty and Makefile
+
+% Refer http://fontawesome.io/license/ for FontAwesome License
+
+%% fontawesome.tex - Demo for faXeTeX %%
+%% Last Modified: 2017-09-02 %%
+
+\documentclass{article}
+
+\usepackage{fontawesome}
+\usepackage{longtable}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+\newgeometry{left=1.0cm,right=1.0cm,top=2.0cm,bottom=2.0cm}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[C]{\faFontAwesome \enspace Font Awesome v4.7.0 for Xe\TeX}
+\fancyfoot{}
+\fancyfoot[L]{faXe\TeX \enspace v1.0}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\today}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand\familydefault{\sfdefault}
+
+\begin{document}
+
+\renewcommand*{\arraystretch}{1.9}
+
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+\begin{longtable}{@{\extracolsep{\fill}}|cl|cl|cl|@{}}
+  \hline
+  \textbf{Icon} & \textbf{Command} & \textbf{Icon} & \textbf{Command} & \textbf{Icon} & \textbf{Command} \\
+  \hline
+  \hline
+  \endhead
+  \faAddressBook & \textbackslash faAddressBook & \faAddressBookO & \textbackslash faAddressBookO & \faAddressCard & \textbackslash faAddressCard\\
+  \hline
+  \faAddressCardO & \textbackslash faAddressCardO & \faAdjust & \textbackslash faAdjust & \faAdn & \textbackslash faAdn\\
+  \hline
+  \faAlignCenter & \textbackslash faAlignCenter & \faAlignJustify & \textbackslash faAlignJustify & \faAlignLeft & \textbackslash faAlignLeft\\
+  \hline
+  \faAlignRight & \textbackslash faAlignRight & \faAmazon & \textbackslash faAmazon & \faAmbulance & \textbackslash faAmbulance\\
+  \hline
+  \faAmericanSignLanguageInterpreting & \textbackslash faAmericanSignLanguageInterpreting & \faAnchor & \textbackslash faAnchor & \faAndroid & \textbackslash faAndroid\\
+  \hline
+  \faAngellist & \textbackslash faAngellist & \faAngleDoubleDown & \textbackslash faAngleDoubleDown & \faAngleDoubleLeft & \textbackslash faAngleDoubleLeft\\
+  \hline
+  \faAngleDoubleRight & \textbackslash faAngleDoubleRight & \faAngleDoubleUp & \textbackslash faAngleDoubleUp & \faAngleDown & \textbackslash faAngleDown\\
+  \hline
+  \faAngleLeft & \textbackslash faAngleLeft & \faAngleRight & \textbackslash faAngleRight & \faAngleUp & \textbackslash faAngleUp\\
+  \hline
+  \faApple & \textbackslash faApple & \faArchive & \textbackslash faArchive & \faAreaChart & \textbackslash faAreaChart\\
+  \hline
+  \faArrowCircleDown & \textbackslash faArrowCircleDown & \faArrowCircleLeft & \textbackslash faArrowCircleLeft & \faArrowCircleRight & \textbackslash faArrowCircleRight\\
+  \hline
+  \faArrowCircleUp & \textbackslash faArrowCircleUp & \faArrowCircleODown & \textbackslash faArrowCircleODown & \faArrowCircleOLeft & \textbackslash faArrowCircleOLeft\\
+  \hline
+  \faArrowCircleORight & \textbackslash faArrowCircleORight & \faArrowCircleOUp & \textbackslash faArrowCircleOUp & \faArrowDown & \textbackslash faArrowDown\\
+  \hline
+  \faArrowLeft & \textbackslash faArrowLeft & \faArrowRight & \textbackslash faArrowRight & \faArrowUp & \textbackslash faArrowUp\\
+  \hline
+  \faArrows & \textbackslash faArrows & \faArrowsAlt & \textbackslash faArrowsAlt & \faArrowsH & \textbackslash faArrowsH\\
+  \hline
+  \faArrowsV & \textbackslash faArrowsV & \faAslInterpreting & \textbackslash faAslInterpreting & \faAssistiveListeningSystems & \textbackslash faAssistiveListeningSystems\\
+  \hline
+  \faAsterisk & \textbackslash faAsterisk & \faAt & \textbackslash faAt & \faAudioDescription & \textbackslash faAudioDescription\\
+  \hline
+  \faAutomobile & \textbackslash faAutomobile & \faBackward & \textbackslash faBackward & \faBalanceScale & \textbackslash faBalanceScale\\
+  \hline
+  \faBan & \textbackslash faBan & \faBandcamp & \textbackslash faBandcamp & \faBank & \textbackslash faBank\\
+  \hline
+  \faBarChart & \textbackslash faBarChart & \faBarChartO & \textbackslash faBarChartO & \faBarcode & \textbackslash faBarcode\\
+  \hline
+  \faBars & \textbackslash faBars & \faBath & \textbackslash faBath & \faBathtub & \textbackslash faBathtub\\
+  \hline
+  \faBattery & \textbackslash faBattery & \faBatteryEmpty & \textbackslash faBatteryEmpty & \faBatteryFull & \textbackslash faBatteryFull\\
+  \hline
+  \faBatteryHalf & \textbackslash faBatteryHalf & \faBatteryQuarter & \textbackslash faBatteryQuarter & \faBatteryThreeQuarters & \textbackslash faBatteryThreeQuarters\\
+  \hline
+  \faBatteryZero & \textbackslash faBatteryZero & \faBatteryOne & \textbackslash faBatteryOne & \faBatteryTwo & \textbackslash faBatteryTwo\\
+  \hline
+  \faBatteryThree & \textbackslash faBatteryThree & \faBatteryFour & \textbackslash faBatteryFour & \faBed & \textbackslash faBed\\
+  \hline
+  \faBeer & \textbackslash faBeer & \faBehance & \textbackslash faBehance & \faBehanceSquare & \textbackslash faBehanceSquare\\
+  \hline
+  \faBell & \textbackslash faBell & \faBellO & \textbackslash faBellO & \faBellSlash & \textbackslash faBellSlash\\
+  \hline
+  \faBellSlashO & \textbackslash faBellSlashO & \faBicycle & \textbackslash faBicycle & \faBinoculars & \textbackslash faBinoculars\\
+  \hline
+  \faBirthdayCake & \textbackslash faBirthdayCake & \faBitbucket & \textbackslash faBitbucket & \faBitbucketSquare & \textbackslash faBitbucketSquare\\
+  \hline
+  \faBitcoin & \textbackslash faBitcoin & \faBlackTie & \textbackslash faBlackTie & \faBlind & \textbackslash faBlind\\
+  \hline
+  \faBluetooth & \textbackslash faBluetooth & \faBluetoothB & \textbackslash faBluetoothB & \faBold & \textbackslash faBold\\
+  \hline
+  \faBolt & \textbackslash faBolt & \faBomb & \textbackslash faBomb & \faBook & \textbackslash faBook\\
+  \hline
+  \faBookmark & \textbackslash faBookmark & \faBookmarkO & \textbackslash faBookmarkO & \faBraille & \textbackslash faBraille\\
+  \hline
+  \faBriefcase & \textbackslash faBriefcase & \faBtc & \textbackslash faBtc & \faBug & \textbackslash faBug\\
+  \hline
+  \faBuilding & \textbackslash faBuilding & \faBuildingO & \textbackslash faBuildingO & \faBullhorn & \textbackslash faBullhorn\\
+  \hline
+  \faBullseye & \textbackslash faBullseye & \faBus & \textbackslash faBus & \faBuysellads & \textbackslash faBuysellads\\
+  \hline
+  \faCab & \textbackslash faCab & \faCalculator & \textbackslash faCalculator & \faCalendar & \textbackslash faCalendar\\
+  \hline
+  \faCalendarCheckO & \textbackslash faCalendarCheckO & \faCalendarMinusO & \textbackslash faCalendarMinusO & \faCalendarO & \textbackslash faCalendarO\\
+  \hline
+  \faCalendarPlusO & \textbackslash faCalendarPlusO & \faCalendarTimesO & \textbackslash faCalendarTimesO & \faCamera & \textbackslash faCamera\\
+  \hline
+  \faCameraRetro & \textbackslash faCameraRetro & \faCar & \textbackslash faCar & \faCaretDown & \textbackslash faCaretDown\\
+  \hline
+  \faCaretLeft & \textbackslash faCaretLeft & \faCaretRight & \textbackslash faCaretRight & \faCaretUp & \textbackslash faCaretUp\\
+  \hline
+  \faCaretSquareODown & \textbackslash faCaretSquareODown & \faCaretSquareOLeft & \textbackslash faCaretSquareOLeft & \faCaretSquareORight & \textbackslash faCaretSquareORight\\
+  \hline
+  \faCaretSquareOUp & \textbackslash faCaretSquareOUp & \faCartArrowDown & \textbackslash faCartArrowDown & \faCartPlus & \textbackslash faCartPlus\\
+  \hline
+  \faCc & \textbackslash faCc & \faCcAmex & \textbackslash faCcAmex & \faCcDinersClub & \textbackslash faCcDinersClub\\
+  \hline
+  \faCcDiscover & \textbackslash faCcDiscover & \faCcJcb & \textbackslash faCcJcb & \faCcMastercard & \textbackslash faCcMastercard\\
+  \hline
+  \faCcPaypal & \textbackslash faCcPaypal & \faCcStripe & \textbackslash faCcStripe & \faCcVisa & \textbackslash faCcVisa\\
+  \hline
+  \faCertificate & \textbackslash faCertificate & \faChain & \textbackslash faChain & \faChainBroken & \textbackslash faChainBroken\\
+  \hline
+  \faCheck & \textbackslash faCheck & \faCheckCircle & \textbackslash faCheckCircle & \faCheckCircleO & \textbackslash faCheckCircleO\\
+  \hline
+  \faCheckSquare & \textbackslash faCheckSquare & \faCheckSquareO & \textbackslash faCheckSquareO & \faChevronCircleDown & \textbackslash faChevronCircleDown\\
+  \hline
+  \faChevronCircleLeft & \textbackslash faChevronCircleLeft & \faChevronCircleRight & \textbackslash faChevronCircleRight & \faChevronCircleUp & \textbackslash faChevronCircleUp\\
+  \hline
+  \faChevronDown & \textbackslash faChevronDown & \faChevronLeft & \textbackslash faChevronLeft & \faChevronRight & \textbackslash faChevronRight\\
+  \hline
+  \faChevronUp & \textbackslash faChevronUp & \faChild & \textbackslash faChild & \faChrome & \textbackslash faChrome\\
+  \hline
+  \faCircle & \textbackslash faCircle & \faCircleO & \textbackslash faCircleO & \faCircleONotch & \textbackslash faCircleONotch\\
+  \hline
+  \faCircleThin & \textbackslash faCircleThin & \faClipboard & \textbackslash faClipboard & \faClockO & \textbackslash faClockO\\
+  \hline
+  \faClone & \textbackslash faClone & \faClose & \textbackslash faClose & \faCloud & \textbackslash faCloud\\
+  \hline
+  \faCloudDownload & \textbackslash faCloudDownload & \faCloudUpload & \textbackslash faCloudUpload & \faCny & \textbackslash faCny\\
+  \hline
+  \faCode & \textbackslash faCode & \faCodeFork & \textbackslash faCodeFork & \faCodepen & \textbackslash faCodepen\\
+  \hline
+  \faCodiepie & \textbackslash faCodiepie & \faCoffee & \textbackslash faCoffee & \faCog & \textbackslash faCog\\
+  \hline
+  \faCogs & \textbackslash faCogs & \faColumns & \textbackslash faColumns & \faComment & \textbackslash faComment\\
+  \hline
+  \faCommentO & \textbackslash faCommentO & \faCommenting & \textbackslash faCommenting & \faCommentingO & \textbackslash faCommentingO\\
+  \hline
+  \faComments & \textbackslash faComments & \faCommentsO & \textbackslash faCommentsO & \faCompass & \textbackslash faCompass\\
+  \hline
+  \faCompress & \textbackslash faCompress & \faConnectdevelop & \textbackslash faConnectdevelop & \faContao & \textbackslash faContao\\
+  \hline
+  \faCopy & \textbackslash faCopy & \faCopyright & \textbackslash faCopyright & \faCreativeCommons & \textbackslash faCreativeCommons\\
+  \hline
+  \faCreditCard & \textbackslash faCreditCard & \faCreditCardAlt & \textbackslash faCreditCardAlt & \faCrop & \textbackslash faCrop\\
+  \hline
+  \faCrosshairs & \textbackslash faCrosshairs & \faCssThree & \textbackslash faCssThree & \faCube & \textbackslash faCube\\
+  \hline
+  \faCubes & \textbackslash faCubes & \faCut & \textbackslash faCut & \faCutlery & \textbackslash faCutlery\\
+  \hline
+  \faDashboard & \textbackslash faDashboard & \faDashcube & \textbackslash faDashcube & \faDatabase & \textbackslash faDatabase\\
+  \hline
+  \faDeaf & \textbackslash faDeaf & \faDeafness & \textbackslash faDeafness & \faDedent & \textbackslash faDedent\\
+  \hline
+  \faDelicious & \textbackslash faDelicious & \faDesktop & \textbackslash faDesktop & \faDeviantart & \textbackslash faDeviantart\\
+  \hline
+  \faDiamond & \textbackslash faDiamond & \faDigg & \textbackslash faDigg & \faDollar & \textbackslash faDollar\\
+  \hline
+  \faDotCircleO & \textbackslash faDotCircleO & \faDownload & \textbackslash faDownload & \faDribbble & \textbackslash faDribbble\\
+  \hline
+  \faDriversLicense & \textbackslash faDriversLicense & \faDriversLicenseO & \textbackslash faDriversLicenseO & \faDropbox & \textbackslash faDropbox\\
+  \hline
+  \faDrupal & \textbackslash faDrupal & \faEdge & \textbackslash faEdge & \faEdit & \textbackslash faEdit\\
+  \hline
+  \faEercast & \textbackslash faEercast & \faEject & \textbackslash faEject & \faEllipsisH & \textbackslash faEllipsisH\\
+  \hline
+  \faEllipsisV & \textbackslash faEllipsisV & \faEmpire & \textbackslash faEmpire & \faEnvelope & \textbackslash faEnvelope\\
+  \hline
+  \faEnvelopeO & \textbackslash faEnvelopeO & \faEnvelopeOpen & \textbackslash faEnvelopeOpen & \faEnvelopeOpenO & \textbackslash faEnvelopeOpenO\\
+  \hline
+  \faEnvelopeSquare & \textbackslash faEnvelopeSquare & \faEnvira & \textbackslash faEnvira & \faEraser & \textbackslash faEraser\\
+  \hline
+  \faEtsy & \textbackslash faEtsy & \faEur & \textbackslash faEur & \faEuro & \textbackslash faEuro\\
+  \hline
+  \faExchange & \textbackslash faExchange & \faExclamation & \textbackslash faExclamation & \faExclamationCircle & \textbackslash faExclamationCircle\\
+  \hline
+  \faExclamationTriangle & \textbackslash faExclamationTriangle & \faExpand & \textbackslash faExpand & \faExpeditedssl & \textbackslash faExpeditedssl\\
+  \hline
+  \faExternalLink & \textbackslash faExternalLink & \faExternalLinkSquare & \textbackslash faExternalLinkSquare & \faEye & \textbackslash faEye\\
+  \hline
+  \faEyeSlash & \textbackslash faEyeSlash & \faEyedropper & \textbackslash faEyedropper & \faFa & \textbackslash faFa\\
+  \hline
+  \faFacebook & \textbackslash faFacebook & \faFacebookF & \textbackslash faFacebookF & \faFacebookOfficial & \textbackslash faFacebookOfficial\\
+  \hline
+  \faFacebookSquare & \textbackslash faFacebookSquare & \faFastBackward & \textbackslash faFastBackward & \faFastForward & \textbackslash faFastForward\\
+  \hline
+  \faFax & \textbackslash faFax & \faFeed & \textbackslash faFeed & \faFemale & \textbackslash faFemale\\
+  \hline
+  \faFighterJet & \textbackslash faFighterJet & \faFile & \textbackslash faFile & \faFileArchiveO & \textbackslash faFileArchiveO\\
+  \hline
+  \faFileAudioO & \textbackslash faFileAudioO & \faFileCodeO & \textbackslash faFileCodeO & \faFileExcelO & \textbackslash faFileExcelO\\
+  \hline
+  \faFileImageO & \textbackslash faFileImageO & \faFileMovieO & \textbackslash faFileMovieO & \faFileO & \textbackslash faFileO\\
+  \hline
+  \faFilePdfO & \textbackslash faFilePdfO & \faFilePhotoO & \textbackslash faFilePhotoO & \faFilePictureO & \textbackslash faFilePictureO\\
+  \hline
+  \faFilePowerpointO & \textbackslash faFilePowerpointO & \faFileSoundO & \textbackslash faFileSoundO & \faFileText & \textbackslash faFileText\\
+  \hline
+  \faFileTextO & \textbackslash faFileTextO & \faFileVideoO & \textbackslash faFileVideoO & \faFileWordO & \textbackslash faFileWordO\\
+  \hline
+  \faFileZipO & \textbackslash faFileZipO & \faFilesO & \textbackslash faFilesO & \faFilm & \textbackslash faFilm\\
+  \hline
+  \faFilter & \textbackslash faFilter & \faFire & \textbackslash faFire & \faFireExtinguisher & \textbackslash faFireExtinguisher\\
+  \hline
+  \faFirefox & \textbackslash faFirefox & \faFirstOrder & \textbackslash faFirstOrder & \faFiveHundredpx & \textbackslash faFiveHundredpx\\
+  \hline
+  \faFlag & \textbackslash faFlag & \faFlagCheckered & \textbackslash faFlagCheckered & \faFlagO & \textbackslash faFlagO\\
+  \hline
+  \faFlash & \textbackslash faFlash & \faFlask & \textbackslash faFlask & \faFlickr & \textbackslash faFlickr\\
+  \hline
+  \faFloppyO & \textbackslash faFloppyO & \faFolder & \textbackslash faFolder & \faFolderO & \textbackslash faFolderO\\
+  \hline
+  \faFolderOpen & \textbackslash faFolderOpen & \faFolderOpenO & \textbackslash faFolderOpenO & \faFont & \textbackslash faFont\\
+  \hline
+  \faFontAwesome & \textbackslash faFontAwesome & \faFonticons & \textbackslash faFonticons & \faFortAwesome & \textbackslash faFortAwesome\\
+  \hline
+  \faForumbee & \textbackslash faForumbee & \faForward & \textbackslash faForward & \faFoursquare & \textbackslash faFoursquare\\
+  \hline
+  \faFreeCodeCamp & \textbackslash faFreeCodeCamp & \faFrownO & \textbackslash faFrownO & \faFutbolO & \textbackslash faFutbolO\\
+  \hline
+  \faGamepad & \textbackslash faGamepad & \faGavel & \textbackslash faGavel & \faGbp & \textbackslash faGbp\\
+  \hline
+  \faGe & \textbackslash faGe & \faGear & \textbackslash faGear & \faGears & \textbackslash faGears\\
+  \hline
+  \faGenderless & \textbackslash faGenderless & \faGetPocket & \textbackslash faGetPocket & \faGg & \textbackslash faGg\\
+  \hline
+  \faGgCircle & \textbackslash faGgCircle & \faGift & \textbackslash faGift & \faGit & \textbackslash faGit\\
+  \hline
+  \faGitSquare & \textbackslash faGitSquare & \faGithub & \textbackslash faGithub & \faGithubAlt & \textbackslash faGithubAlt\\
+  \hline
+  \faGithubSquare & \textbackslash faGithubSquare & \faGitlab & \textbackslash faGitlab & \faGittip & \textbackslash faGittip\\
+  \hline
+  \faGlass & \textbackslash faGlass & \faGlide & \textbackslash faGlide & \faGlideG & \textbackslash faGlideG\\
+  \hline
+  \faGlobe & \textbackslash faGlobe & \faGoogle & \textbackslash faGoogle & \faGooglePlus & \textbackslash faGooglePlus\\
+  \hline
+  \faGooglePlusCircle & \textbackslash faGooglePlusCircle & \faGooglePlusOfficial & \textbackslash faGooglePlusOfficial & \faGooglePlusSquare & \textbackslash faGooglePlusSquare\\
+  \hline
+  \faGoogleWallet & \textbackslash faGoogleWallet & \faGraduationCap & \textbackslash faGraduationCap & \faGratipay & \textbackslash faGratipay\\
+  \hline
+  \faGrav & \textbackslash faGrav & \faGroup & \textbackslash faGroup & \faHSquare & \textbackslash faHSquare\\
+  \hline
+  \faHackerNews & \textbackslash faHackerNews & \faHandGrabO & \textbackslash faHandGrabO & \faHandLizardO & \textbackslash faHandLizardO\\
+  \hline
+  \faHandODown & \textbackslash faHandODown & \faHandOLeft & \textbackslash faHandOLeft & \faHandORight & \textbackslash faHandORight\\
+  \hline
+  \faHandOUp & \textbackslash faHandOUp & \faHandPaperO & \textbackslash faHandPaperO & \faHandPeaceO & \textbackslash faHandPeaceO\\
+  \hline
+  \faHandPointerO & \textbackslash faHandPointerO & \faHandRockO & \textbackslash faHandRockO & \faHandScissorsO & \textbackslash faHandScissorsO\\
+  \hline
+  \faHandSpockO & \textbackslash faHandSpockO & \faHandStopO & \textbackslash faHandStopO & \faHandshakeO & \textbackslash faHandshakeO\\
+  \hline
+  \faHardOfHearing & \textbackslash faHardOfHearing & \faHashtag & \textbackslash faHashtag & \faHddO & \textbackslash faHddO\\
+  \hline
+  \faHeader & \textbackslash faHeader & \faHeadphones & \textbackslash faHeadphones & \faHeart & \textbackslash faHeart\\
+  \hline
+  \faHeartO & \textbackslash faHeartO & \faHeartbeat & \textbackslash faHeartbeat & \faHistory & \textbackslash faHistory\\
+  \hline
+  \faHome & \textbackslash faHome & \faHospitalO & \textbackslash faHospitalO & \faHotel & \textbackslash faHotel\\
+  \hline
+  \faHourglass & \textbackslash faHourglass & \faHourglassEnd & \textbackslash faHourglassEnd & \faHourglassHalf & \textbackslash faHourglassHalf\\
+  \hline
+  \faHourglassO & \textbackslash faHourglassO & \faHourglassStart & \textbackslash faHourglassStart & \faHourglassOne & \textbackslash faHourglassOne\\
+  \hline
+  \faHourglassTwo & \textbackslash faHourglassTwo & \faHourglassThree & \textbackslash faHourglassThree & \faHouzz & \textbackslash faHouzz\\
+  \hline
+  \faHtmlFive & \textbackslash faHtmlFive & \faICursor & \textbackslash faICursor & \faIdBadge & \textbackslash faIdBadge\\
+  \hline
+  \faIdCard & \textbackslash faIdCard & \faIdCardO & \textbackslash faIdCardO & \faIls & \textbackslash faIls\\
+  \hline
+  \faImage & \textbackslash faImage & \faImdb & \textbackslash faImdb & \faInbox & \textbackslash faInbox\\
+  \hline
+  \faIndent & \textbackslash faIndent & \faIndustry & \textbackslash faIndustry & \faInfo & \textbackslash faInfo\\
+  \hline
+  \faInfoCircle & \textbackslash faInfoCircle & \faInr & \textbackslash faInr & \faInstagram & \textbackslash faInstagram\\
+  \hline
+  \faInstitution & \textbackslash faInstitution & \faInternetExplorer & \textbackslash faInternetExplorer & \faIntersex & \textbackslash faIntersex\\
+  \hline
+  \faIoxhost & \textbackslash faIoxhost & \faItalic & \textbackslash faItalic & \faJoomla & \textbackslash faJoomla\\
+  \hline
+  \faJpy & \textbackslash faJpy & \faJsfiddle & \textbackslash faJsfiddle & \faKey & \textbackslash faKey\\
+  \hline
+  \faKeyboardO & \textbackslash faKeyboardO & \faKrw & \textbackslash faKrw & \faLanguage & \textbackslash faLanguage\\
+  \hline
+  \faLaptop & \textbackslash faLaptop & \faLastfm & \textbackslash faLastfm & \faLastfmSquare & \textbackslash faLastfmSquare\\
+  \hline
+  \faLeaf & \textbackslash faLeaf & \faLeanpub & \textbackslash faLeanpub & \faLegal & \textbackslash faLegal\\
+  \hline
+  \faLemonO & \textbackslash faLemonO & \faLevelDown & \textbackslash faLevelDown & \faLevelUp & \textbackslash faLevelUp\\
+  \hline
+  \faLifeBouy & \textbackslash faLifeBouy & \faLifeBuoy & \textbackslash faLifeBuoy & \faLifeRing & \textbackslash faLifeRing\\
+  \hline
+  \faLifeSaver & \textbackslash faLifeSaver & \faLightbulbO & \textbackslash faLightbulbO & \faLineChart & \textbackslash faLineChart\\
+  \hline
+  \faLink & \textbackslash faLink & \faLinkedin & \textbackslash faLinkedin & \faLinkedinSquare & \textbackslash faLinkedinSquare\\
+  \hline
+  \faLinode & \textbackslash faLinode & \faLinux & \textbackslash faLinux & \faList & \textbackslash faList\\
+  \hline
+  \faListAlt & \textbackslash faListAlt & \faListOl & \textbackslash faListOl & \faListUl & \textbackslash faListUl\\
+  \hline
+  \faLocationArrow & \textbackslash faLocationArrow & \faLock & \textbackslash faLock & \faLongArrowDown & \textbackslash faLongArrowDown\\
+  \hline
+  \faLongArrowLeft & \textbackslash faLongArrowLeft & \faLongArrowRight & \textbackslash faLongArrowRight & \faLongArrowUp & \textbackslash faLongArrowUp\\
+  \hline
+  \faLowVision & \textbackslash faLowVision & \faMagic & \textbackslash faMagic & \faMagnet & \textbackslash faMagnet\\
+  \hline
+  \faMailForward & \textbackslash faMailForward & \faMailReply & \textbackslash faMailReply & \faMailReplyAll & \textbackslash faMailReplyAll\\
+  \hline
+  \faMale & \textbackslash faMale & \faMap & \textbackslash faMap & \faMapMarker & \textbackslash faMapMarker\\
+  \hline
+  \faMapO & \textbackslash faMapO & \faMapPin & \textbackslash faMapPin & \faMapSigns & \textbackslash faMapSigns\\
+  \hline
+  \faMars & \textbackslash faMars & \faMarsDouble & \textbackslash faMarsDouble & \faMarsStroke & \textbackslash faMarsStroke\\
+  \hline
+  \faMarsStrokeH & \textbackslash faMarsStrokeH & \faMarsStrokeV & \textbackslash faMarsStrokeV & \faMaxcdn & \textbackslash faMaxcdn\\
+  \hline
+  \faMeanpath & \textbackslash faMeanpath & \faMedium & \textbackslash faMedium & \faMedkit & \textbackslash faMedkit\\
+  \hline
+  \faMeetup & \textbackslash faMeetup & \faMehO & \textbackslash faMehO & \faMercury & \textbackslash faMercury\\
+  \hline
+  \faMicrochip & \textbackslash faMicrochip & \faMicrophone & \textbackslash faMicrophone & \faMicrophoneSlash & \textbackslash faMicrophoneSlash\\
+  \hline
+  \faMinus & \textbackslash faMinus & \faMinusCircle & \textbackslash faMinusCircle & \faMinusSquare & \textbackslash faMinusSquare\\
+  \hline
+  \faMinusSquareO & \textbackslash faMinusSquareO & \faMixcloud & \textbackslash faMixcloud & \faMobile & \textbackslash faMobile\\
+  \hline
+  \faMobilePhone & \textbackslash faMobilePhone & \faModx & \textbackslash faModx & \faMoney & \textbackslash faMoney\\
+  \hline
+  \faMoonO & \textbackslash faMoonO & \faMortarBoard & \textbackslash faMortarBoard & \faMotorcycle & \textbackslash faMotorcycle\\
+  \hline
+  \faMousePointer & \textbackslash faMousePointer & \faMusic & \textbackslash faMusic & \faNavicon & \textbackslash faNavicon\\
+  \hline
+  \faNeuter & \textbackslash faNeuter & \faNewspaperO & \textbackslash faNewspaperO & \faObjectGroup & \textbackslash faObjectGroup\\
+  \hline
+  \faObjectUngroup & \textbackslash faObjectUngroup & \faOdnoklassniki & \textbackslash faOdnoklassniki & \faOdnoklassnikiSquare & \textbackslash faOdnoklassnikiSquare\\
+  \hline
+  \faOpencart & \textbackslash faOpencart & \faOpenid & \textbackslash faOpenid & \faOpera & \textbackslash faOpera\\
+  \hline
+  \faOptinMonster & \textbackslash faOptinMonster & \faOutdent & \textbackslash faOutdent & \faPagelines & \textbackslash faPagelines\\
+  \hline
+  \faPaintBrush & \textbackslash faPaintBrush & \faPaperPlane & \textbackslash faPaperPlane & \faPaperPlaneO & \textbackslash faPaperPlaneO\\
+  \hline
+  \faPaperclip & \textbackslash faPaperclip & \faParagraph & \textbackslash faParagraph & \faPaste & \textbackslash faPaste\\
+  \hline
+  \faPause & \textbackslash faPause & \faPauseCircle & \textbackslash faPauseCircle & \faPauseCircleO & \textbackslash faPauseCircleO\\
+  \hline
+  \faPaw & \textbackslash faPaw & \faPaypal & \textbackslash faPaypal & \faPencil & \textbackslash faPencil\\
+  \hline
+  \faPencilSquare & \textbackslash faPencilSquare & \faPencilSquareO & \textbackslash faPencilSquareO & \faPercent & \textbackslash faPercent\\
+  \hline
+  \faPhone & \textbackslash faPhone & \faPhoneSquare & \textbackslash faPhoneSquare & \faPhoto & \textbackslash faPhoto\\
+  \hline
+  \faPictureO & \textbackslash faPictureO & \faPieChart & \textbackslash faPieChart & \faPiedPiper & \textbackslash faPiedPiper\\
+  \hline
+  \faPiedPiperAlt & \textbackslash faPiedPiperAlt & \faPiedPiperPp & \textbackslash faPiedPiperPp & \faPinterest & \textbackslash faPinterest\\
+  \hline
+  \faPinterestP & \textbackslash faPinterestP & \faPinterestSquare & \textbackslash faPinterestSquare & \faPlane & \textbackslash faPlane\\
+  \hline
+  \faPlay & \textbackslash faPlay & \faPlayCircle & \textbackslash faPlayCircle & \faPlayCircleO & \textbackslash faPlayCircleO\\
+  \hline
+  \faPlug & \textbackslash faPlug & \faPlus & \textbackslash faPlus & \faPlusCircle & \textbackslash faPlusCircle\\
+  \hline
+  \faPlusSquare & \textbackslash faPlusSquare & \faPlusSquareO & \textbackslash faPlusSquareO & \faPodcast & \textbackslash faPodcast\\
+  \hline
+  \faPowerOff & \textbackslash faPowerOff & \faPrint & \textbackslash faPrint & \faProductHunt & \textbackslash faProductHunt\\
+  \hline
+  \faPuzzlePiece & \textbackslash faPuzzlePiece & \faQq & \textbackslash faQq & \faQrcode & \textbackslash faQrcode\\
+  \hline
+  \faQuestion & \textbackslash faQuestion & \faQuestionCircle & \textbackslash faQuestionCircle & \faQuestionCircleO & \textbackslash faQuestionCircleO\\
+  \hline
+  \faQuora & \textbackslash faQuora & \faQuoteLeft & \textbackslash faQuoteLeft & \faQuoteRight & \textbackslash faQuoteRight\\
+  \hline
+  \faRa & \textbackslash faRa & \faRandom & \textbackslash faRandom & \faRavelry & \textbackslash faRavelry\\
+  \hline
+  \faRebel & \textbackslash faRebel & \faRecycle & \textbackslash faRecycle & \faReddit & \textbackslash faReddit\\
+  \hline
+  \faRedditAlien & \textbackslash faRedditAlien & \faRedditSquare & \textbackslash faRedditSquare & \faRefresh & \textbackslash faRefresh\\
+  \hline
+  \faRegistered & \textbackslash faRegistered & \faRemove & \textbackslash faRemove & \faRenren & \textbackslash faRenren\\
+  \hline
+  \faReorder & \textbackslash faReorder & \faRepeat & \textbackslash faRepeat & \faReply & \textbackslash faReply\\
+  \hline
+  \faReplyAll & \textbackslash faReplyAll & \faResistance & \textbackslash faResistance & \faRetweet & \textbackslash faRetweet\\
+  \hline
+  \faRmb & \textbackslash faRmb & \faRoad & \textbackslash faRoad & \faRocket & \textbackslash faRocket\\
+  \hline
+  \faRotateLeft & \textbackslash faRotateLeft & \faRotateRight & \textbackslash faRotateRight & \faRouble & \textbackslash faRouble\\
+  \hline
+  \faRss & \textbackslash faRss & \faRssSquare & \textbackslash faRssSquare & \faRub & \textbackslash faRub\\
+  \hline
+  \faRuble & \textbackslash faRuble & \faRupee & \textbackslash faRupee & \faSFifteen & \textbackslash faSFifteen\\
+  \hline
+  \faSafari & \textbackslash faSafari & \faSave & \textbackslash faSave & \faScissors & \textbackslash faScissors\\
+  \hline
+  \faScribd & \textbackslash faScribd & \faSearch & \textbackslash faSearch & \faSearchMinus & \textbackslash faSearchMinus\\
+  \hline
+  \faSearchPlus & \textbackslash faSearchPlus & \faSellsy & \textbackslash faSellsy & \faSend & \textbackslash faSend\\
+  \hline
+  \faSendO & \textbackslash faSendO & \faServer & \textbackslash faServer & \faShare & \textbackslash faShare\\
+  \hline
+  \faShareAlt & \textbackslash faShareAlt & \faShareAltSquare & \textbackslash faShareAltSquare & \faShareSquare & \textbackslash faShareSquare\\
+  \hline
+  \faShareSquareO & \textbackslash faShareSquareO & \faShekel & \textbackslash faShekel & \faSheqel & \textbackslash faSheqel\\
+  \hline
+  \faShield & \textbackslash faShield & \faShip & \textbackslash faShip & \faShirtsinbulk & \textbackslash faShirtsinbulk\\
+  \hline
+  \faShoppingBag & \textbackslash faShoppingBag & \faShoppingBasket & \textbackslash faShoppingBasket & \faShoppingCart & \textbackslash faShoppingCart\\
+  \hline
+  \faShower & \textbackslash faShower & \faSignIn & \textbackslash faSignIn & \faSignLanguage & \textbackslash faSignLanguage\\
+  \hline
+  \faSignOut & \textbackslash faSignOut & \faSignal & \textbackslash faSignal & \faSigning & \textbackslash faSigning\\
+  \hline
+  \faSimplybuilt & \textbackslash faSimplybuilt & \faSitemap & \textbackslash faSitemap & \faSkyatlas & \textbackslash faSkyatlas\\
+  \hline
+  \faSkype & \textbackslash faSkype & \faSlack & \textbackslash faSlack & \faSliders & \textbackslash faSliders\\
+  \hline
+  \faSlideshare & \textbackslash faSlideshare & \faSmileO & \textbackslash faSmileO & \faSnapchat & \textbackslash faSnapchat\\
+  \hline
+  \faSnapchatGhost & \textbackslash faSnapchatGhost & \faSnapchatSquare & \textbackslash faSnapchatSquare & \faSnowflakeO & \textbackslash faSnowflakeO\\
+  \hline
+  \faSoccerBallO & \textbackslash faSoccerBallO & \faSort & \textbackslash faSort & \faSortAlphaAsc & \textbackslash faSortAlphaAsc\\
+  \hline
+  \faSortAlphaDesc & \textbackslash faSortAlphaDesc & \faSortAmountAsc & \textbackslash faSortAmountAsc & \faSortAmountDesc & \textbackslash faSortAmountDesc\\
+  \hline
+  \faSortAsc & \textbackslash faSortAsc & \faSortDesc & \textbackslash faSortDesc & \faSortDown & \textbackslash faSortDown\\
+  \hline
+  \faSortNumericAsc & \textbackslash faSortNumericAsc & \faSortNumericDesc & \textbackslash faSortNumericDesc & \faSortUp & \textbackslash faSortUp\\
+  \hline
+  \faSoundcloud & \textbackslash faSoundcloud & \faSpaceShuttle & \textbackslash faSpaceShuttle & \faSpinner & \textbackslash faSpinner\\
+  \hline
+  \faSpoon & \textbackslash faSpoon & \faSpotify & \textbackslash faSpotify & \faSquare & \textbackslash faSquare\\
+  \hline
+  \faSquareO & \textbackslash faSquareO & \faStackExchange & \textbackslash faStackExchange & \faStackOverflow & \textbackslash faStackOverflow\\
+  \hline
+  \faStar & \textbackslash faStar & \faStarHalf & \textbackslash faStarHalf & \faStarHalfEmpty & \textbackslash faStarHalfEmpty\\
+  \hline
+  \faStarHalfFull & \textbackslash faStarHalfFull & \faStarHalfO & \textbackslash faStarHalfO & \faStarO & \textbackslash faStarO\\
+  \hline
+  \faSteam & \textbackslash faSteam & \faSteamSquare & \textbackslash faSteamSquare & \faStepBackward & \textbackslash faStepBackward\\
+  \hline
+  \faStepForward & \textbackslash faStepForward & \faStethoscope & \textbackslash faStethoscope & \faStickyNote & \textbackslash faStickyNote\\
+  \hline
+  \faStickyNoteO & \textbackslash faStickyNoteO & \faStop & \textbackslash faStop & \faStopCircle & \textbackslash faStopCircle\\
+  \hline
+  \faStopCircleO & \textbackslash faStopCircleO & \faStreetView & \textbackslash faStreetView & \faStrikethrough & \textbackslash faStrikethrough\\
+  \hline
+  \faStumbleupon & \textbackslash faStumbleupon & \faStumbleuponCircle & \textbackslash faStumbleuponCircle & \faSubscript & \textbackslash faSubscript\\
+  \hline
+  \faSubway & \textbackslash faSubway & \faSuitcase & \textbackslash faSuitcase & \faSunO & \textbackslash faSunO\\
+  \hline
+  \faSuperpowers & \textbackslash faSuperpowers & \faSuperscript & \textbackslash faSuperscript & \faSupport & \textbackslash faSupport\\
+  \hline
+  \faTable & \textbackslash faTable & \faTablet & \textbackslash faTablet & \faTachometer & \textbackslash faTachometer\\
+  \hline
+  \faTag & \textbackslash faTag & \faTags & \textbackslash faTags & \faTasks & \textbackslash faTasks\\
+  \hline
+  \faTaxi & \textbackslash faTaxi & \faTelegram & \textbackslash faTelegram & \faTelevision & \textbackslash faTelevision\\
+  \hline
+  \faTencentWeibo & \textbackslash faTencentWeibo & \faTerminal & \textbackslash faTerminal & \faTextHeight & \textbackslash faTextHeight\\
+  \hline
+  \faTextWidth & \textbackslash faTextWidth & \faTh & \textbackslash faTh & \faThLarge & \textbackslash faThLarge\\
+  \hline
+  \faThList & \textbackslash faThList & \faThemeisle & \textbackslash faThemeisle & \faThermometer & \textbackslash faThermometer\\
+  \hline
+  \faThermometerEmpty & \textbackslash faThermometerEmpty & \faThermometerFull & \textbackslash faThermometerFull & \faThermometerHalf & \textbackslash faThermometerHalf\\
+  \hline
+  \faThermometerQuarter & \textbackslash faThermometerQuarter & \faThermometerThreeQuarters & \textbackslash faThermometerThreeQuarters & \faThermometerZero & \textbackslash faThermometerZero\\
+  \hline
+  \faThermometerOne & \textbackslash faThermometerOne & \faThermometerTwo & \textbackslash faThermometerTwo & \faThermometerThree & \textbackslash faThermometerThree\\
+  \hline
+  \faThermometerFour & \textbackslash faThermometerFour & \faThumbTack & \textbackslash faThumbTack & \faThumbsDown & \textbackslash faThumbsDown\\
+  \hline
+  \faThumbsODown & \textbackslash faThumbsODown & \faThumbsOUp & \textbackslash faThumbsOUp & \faThumbsUp & \textbackslash faThumbsUp\\
+  \hline
+  \faTicket & \textbackslash faTicket & \faTimes & \textbackslash faTimes & \faTimesCircle & \textbackslash faTimesCircle\\
+  \hline
+  \faTimesCircleO & \textbackslash faTimesCircleO & \faTimesRectangle & \textbackslash faTimesRectangle & \faTimesRectangleO & \textbackslash faTimesRectangleO\\
+  \hline
+  \faTint & \textbackslash faTint & \faToggleDown & \textbackslash faToggleDown & \faToggleLeft & \textbackslash faToggleLeft\\
+  \hline
+  \faToggleOff & \textbackslash faToggleOff & \faToggleOn & \textbackslash faToggleOn & \faToggleRight & \textbackslash faToggleRight\\
+  \hline
+  \faToggleUp & \textbackslash faToggleUp & \faTrademark & \textbackslash faTrademark & \faTrain & \textbackslash faTrain\\
+  \hline
+  \faTransgender & \textbackslash faTransgender & \faTransgenderAlt & \textbackslash faTransgenderAlt & \faTrash & \textbackslash faTrash\\
+  \hline
+  \faTrashO & \textbackslash faTrashO & \faTree & \textbackslash faTree & \faTrello & \textbackslash faTrello\\
+  \hline
+  \faTripadvisor & \textbackslash faTripadvisor & \faTrophy & \textbackslash faTrophy & \faTruck & \textbackslash faTruck\\
+  \hline
+  \faTry & \textbackslash faTry & \faTty & \textbackslash faTty & \faTumblr & \textbackslash faTumblr\\
+  \hline
+  \faTumblrSquare & \textbackslash faTumblrSquare & \faTurkishLira & \textbackslash faTurkishLira & \faTv & \textbackslash faTv\\
+  \hline
+  \faTwitch & \textbackslash faTwitch & \faTwitter & \textbackslash faTwitter & \faTwitterSquare & \textbackslash faTwitterSquare\\
+  \hline
+  \faUmbrella & \textbackslash faUmbrella & \faUnderline & \textbackslash faUnderline & \faUndo & \textbackslash faUndo\\
+  \hline
+  \faUniversalAccess & \textbackslash faUniversalAccess & \faUniversity & \textbackslash faUniversity & \faUnlink & \textbackslash faUnlink\\
+  \hline
+  \faUnlock & \textbackslash faUnlock & \faUnlockAlt & \textbackslash faUnlockAlt & \faUnsorted & \textbackslash faUnsorted\\
+  \hline
+  \faUpload & \textbackslash faUpload & \faUsb & \textbackslash faUsb & \faUsd & \textbackslash faUsd\\
+  \hline
+  \faUser & \textbackslash faUser & \faUserCircle & \textbackslash faUserCircle & \faUserCircleO & \textbackslash faUserCircleO\\
+  \hline
+  \faUserMd & \textbackslash faUserMd & \faUserO & \textbackslash faUserO & \faUserPlus & \textbackslash faUserPlus\\
+  \hline
+  \faUserSecret & \textbackslash faUserSecret & \faUserTimes & \textbackslash faUserTimes & \faUsers & \textbackslash faUsers\\
+  \hline
+  \faVcard & \textbackslash faVcard & \faVcardO & \textbackslash faVcardO & \faVenus & \textbackslash faVenus\\
+  \hline
+  \faVenusDouble & \textbackslash faVenusDouble & \faVenusMars & \textbackslash faVenusMars & \faViacoin & \textbackslash faViacoin\\
+  \hline
+  \faViadeo & \textbackslash faViadeo & \faViadeoSquare & \textbackslash faViadeoSquare & \faVideoCamera & \textbackslash faVideoCamera\\
+  \hline
+  \faVimeo & \textbackslash faVimeo & \faVimeoSquare & \textbackslash faVimeoSquare & \faVine & \textbackslash faVine\\
+  \hline
+  \faVk & \textbackslash faVk & \faVolumeControlPhone & \textbackslash faVolumeControlPhone & \faVolumeDown & \textbackslash faVolumeDown\\
+  \hline
+  \faVolumeOff & \textbackslash faVolumeOff & \faVolumeUp & \textbackslash faVolumeUp & \faWarning & \textbackslash faWarning\\
+  \hline
+  \faWechat & \textbackslash faWechat & \faWeibo & \textbackslash faWeibo & \faWeixin & \textbackslash faWeixin\\
+  \hline
+  \faWhatsapp & \textbackslash faWhatsapp & \faWheelchair & \textbackslash faWheelchair & \faWheelchairAlt & \textbackslash faWheelchairAlt\\
+  \hline
+  \faWifi & \textbackslash faWifi & \faWikipediaW & \textbackslash faWikipediaW & \faWindowClose & \textbackslash faWindowClose\\
+  \hline
+  \faWindowCloseO & \textbackslash faWindowCloseO & \faWindowMaximize & \textbackslash faWindowMaximize & \faWindowMinimize & \textbackslash faWindowMinimize\\
+  \hline
+  \faWindowRestore & \textbackslash faWindowRestore & \faWindows & \textbackslash faWindows & \faWon & \textbackslash faWon\\
+  \hline
+  \faWordpress & \textbackslash faWordpress & \faWpbeginner & \textbackslash faWpbeginner & \faWpexplorer & \textbackslash faWpexplorer\\
+  \hline
+  \faWpforms & \textbackslash faWpforms & \faWrench & \textbackslash faWrench & \faXing & \textbackslash faXing\\
+  \hline
+  \faXingSquare & \textbackslash faXingSquare & \faYCombinator & \textbackslash faYCombinator & \faYCombinatorSquare & \textbackslash faYCombinatorSquare\\
+  \hline
+  \faYahoo & \textbackslash faYahoo & \faYc & \textbackslash faYc & \faYcSquare & \textbackslash faYcSquare\\
+  \hline
+  \faYelp & \textbackslash faYelp & \faYen & \textbackslash faYen & \faYoast & \textbackslash faYoast\\
+  \hline
+  \faYoutube & \textbackslash faYoutube & \faYoutubePlay & \textbackslash faYoutubePlay & \faYoutubeSquare & \textbackslash faYoutubeSquare\\
+  \hline
+
+\end{longtable}
+
+\end{document}
